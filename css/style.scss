@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .container {
+      max-width: 1800px;
+    }
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* nav區域 */
+  nav {
+    width: 100%;
+    border: 0;
+    left: 0;
+    height: 68px;
+    z-index: 2;
+    .banner-button-next {
+      font-size: 70px;
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      z-index: 10;
+      cursor: pointer;
+      left: 10px;
+      right: auto;
+    }
+    .banner-button-prev {
+        font-size: 70px;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        z-index: 10;
+        cursor: pointer;
+        right: 10px;
+        left: auto;
+      }
+      
+    .container {
+        justify-content: space-between
+    }
+    .navbar-collapse {
+      flex-grow: unset;
+    }
+  
+    .navbar {
+      position: fixed;
+    }
+  }
+
+
+  /* section.banner區域 */
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bg-img{
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100vh;
+    padding-top: 68px;
+  }
+
+
+  /* section.about 區域 */
+  section.about .container {
+    padding: 15px 0;
+    display: flex;
+  }
+
+  .col-gold-left {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 61.8%;
+  }
+
+  .col-gold-rigth {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 38.2%;
+  }
+
+  .gold_img img {
+    width: 100%;
+  }
+
+  /* section.information 區域 */
+  .information {
+    padding: 15px;
+  }
+
+  .information .container {
+    display: flex;
+  }
+
+  .info_img {
+    width: 38.2%;
+  }
+
+  .info_cat {
+    background-image: url("https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+  }
+
+  .info_text {
+    width: 61.8%;
+  }
+
+  /* footer 區域 */
+  footer .copyright {
+    margin: 0 -15px;
+    background-color: green;
+    text-align: center;
+  }
+
+  /* 文字改成紅色，p標籤屬性的margin上下16px移除，padding上下10px，文字大小15px，字體紅色 */
+  footer .copyright p {
+    color: red;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+  }
