@@ -2,7 +2,7 @@
   "name": "bus-card",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://aehuw3he/aehuw3he.github.io",
+  "homepage": "https://github.com/aehuw3he/aehuw3he.github.io",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
