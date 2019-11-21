@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./lightbox2-2.11.1/dist//css/lightbox.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="logo">
+          <a href="" title="公司名稱">
+            <img
+              src="./img/sharon-pittaway-iMdsjoiftZo-unsplash.jpg"
+              alt="標題名稱logo"
+            />
+          </a>
+        </div>
+        <nav id="main_nav" class="main_nav">
+          <ul class="nav_links_group">
+            <a class="nav_links active" href="#banner">最新消息</a>
+            <a class="nav_links" href="#product">商品系列</a>
+            <a class="nav_links" href="#order">訂購流程</a>
+            <a class="nav_links" href="#story">品牌故事</a>
+            <a class="nav_links" href="#contact">聯絡我們</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image:url('./img/flower1.jpg')"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image:url('./img/flower2.jpg')"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image:url('./img/flower3.jpg')"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image:url('./img/flower4.jpg')"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image:url('./img/flower5.jpg')"
+          ></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+    </section>
+    <section id="product">
+      <div class="container card-4">
+        <div class="box-left">
+          <div data-aos="zoom-in-right" data-aos-delay="300">
+            <div class="box">
+              <div class="font-left" id="font-left">
+                <h1>七夕心花樣</h1>
+                <p>
+                  情人節將近，本店特別打造出一款匠心獨具的愛心形狀花，由多種花卉組合而成，拿在手中會散發出淡淡的花香，讓真誠的心意發揮的淋漓盡致。
+                </p>
+              </div>
+              <div class="img-left">
+                <div
+                  class="img"
+                  style="background-image: url('./img/serial-1.jpg')"
+                ></div>
+                <a
+                  href="./img/serial-1.jpg"
+                  data-lightbox="image-1"
+                  data-title="My caption"
+                >
+                  <img
+                    class="img-hide"
+                    id="img-product-1"
+                    src="./img/serial-1.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-right" data-aos-delay="100">
+            <div class="box my-0">
+              <div class="font-left" id="font-left">
+                <h1>中籤花不盡</h1>
+                <p>
+                  專門替鴻運當頭的人而設計，書籤中有著完整護貝的花，代表著財源滾滾的運勢接連不斷，錢財彷彿聚寶盆一樣，怎麼也花不盡~
+                </p>
+              </div>
+              <div class="img-left">
+                <div
+                  class="img"
+                  style="background-image: url('./img/serial-3.jpg')"
+                ></div>
+                <a
+                  href="./img/serial-3.jpg"
+                  data-lightbox="image-1"
+                  data-title="My caption"
+                >
+                  <img
+                    class="img-hide"
+                    id="img-product-2"
+                    src="./img/serial-3.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-right">
+          <div data-aos="zoom-in-left" data-aos-delay="0">
+            <div class="box my-100">
+              <div class="font-left" id="font-left">
+                <h1>激光偽植物</h1>
+                <p>
+                  高仿真的人工植物，搭配特色LED渲染植物的色彩，當四周光線微弱時，更顯得風度優雅大方，氣度超脫非凡，無論擺放客廳、辦公室、會議室，都顯得高貴而優雅。
+                </p>
+              </div>
+              <div class="img-left">
+                <div
+                  class="img"
+                  style="background-image: url('./img/serial-2.jpg')"
+                ></div>
+                <a
+                  href="./img/serial-2.jpg"
+                  data-lightbox="image-1"
+                  data-title="My caption"
+                >
+                  <img
+                    class="img-hide"
+                    id="img-product-2"
+                    src="./img/serial-2.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-left" data-aos-delay="0">
+            <div class="box my-0">
+              <div class="font-left" id="font-left">
+                <h1>招財進寶樹</h1>
+                <p>
+                  想要招財進寶嗎?聽這名子似乎搖一搖錢就會掉下來了~在改善風水的植物中，此植物也是小有名氣的，您身邊目前還缺乏它嗎?
+                  快來試試吧!
+                </p>
+              </div>
+              <div class="img-left">
+                <div
+                  class="img"
+                  style="background-image: url('./img/serial-4.jpg')"
+                ></div>
+                <a
+                  href="./img/serial-4.jpg"
+                  data-lightbox="image-1"
+                  data-title="My caption"
+                >
+                  <img
+                    class="img-hide"
+                    id="img-product-2"
+                    src="./img/serial-4.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-animate" id="product-animate">
+        <div class="img-product-L" id="changeImgWidthLeft">
+          <img
+            class="img-prodcut-overflow-L"
+            id="img-prodcut-overflow-L"
+            src="./img/plot-L-modify.png"
+            alt=""
+            height="1080px"
+          />
+        </div>
+        <div class="img-product-R" id="changeImgWidthRight">
+          <img
+            class="img-prodcut-overflow-R"
+            id="img-prodcut-overflow-R"
+            src="./img/plot-R-modify.png"
+            alt=""
+            height="1065px"
+          />
+        </div>
+        <div class="boxDownProduct">
+          <div class="container">
+            <div class="row">
+              <div class="circleGroup">
+                <div
+                  id="circleBtnOne"
+                  class="circle-btn1"
+                  style="background-image: url('./img/flower3.jpg')"
+                ></div>
+                <div
+                  id="circleBtnTwo"
+                  class="circle-btn2"
+                  style="background-image: url('./img/flower6.jpg')"
+                ></div>
+              </div>
+            </div>
+            <div class="fontGroup">
+              <div class="col-xl-3 font-L">
+                <p>
+                  隨著壓力累積，身心疲累，沒時間親近大自然，試試植物的特殊效果，替居家營造出綠意盎然的氛圍，間接療癒身心。
+                </p>
+              </div>
+              <div class="col-xl-3 font-L">
+                <p>
+                  相框不僅能保存畫作，也能把萬紫千紅的花卉融入框中，使裝飾不再是平面而已，更模擬出彷彿置身於五彩繽紛花花世界的真實感。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="order">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-1 offset-xl-4">
+            <i class="cart-icon fas fa-shopping-cart"></i>
+          </div>
+          <div class="col-xl-2">
+            <h1>訂購流程</h1>
+          </div>
+          <div class="col-xl-12 circle-group">
+            <div
+              class="circle"
+              style="background-image: url('./img/order-1.jpg')"
+            >
+              <img class="img-icon" src="./img/icon.png" alt="" />
+            </div>
+            <div
+              class="circle"
+              style="background-image: url('./img/order-2.jpg')"
+            >
+              <img class="img-icon" src="./img/icon.png" alt="" />
+            </div>
+            <div
+              class="circle"
+              style="background-image: url('./img/order-3.jpg')"
+            >
+              <img class="img-icon" src="./img/icon.png" alt="" />
+            </div>
+          </div>
+          <div class="font-boxs">
+            <div class="font-box">
+              <h1>1.付款方式</h1>
+              <p>信用卡線上刷卡</p>
+              <p class="font-height">現金付款(親自取貨)</p>
+              <p>ATM自動提款機轉帳</p>
+            </div>
+            <div class="font-box">
+              <h1>2.運費計算</h1>
+              <p>滿500元免運費</p>
+              <p class="font-height">離島寄送300元</p>
+              <p>宅配/快遞(180元)</p>
+            </div>
+            <div class="font-box">
+              <h1>3.領取商品</h1>
+              <p>親自到店家取貨</p>
+              <p class="font-height">配送業者宅配到府</p>
+            </div>
+          </div>
+          <div class="col-xl-1">
+            <i class="font-exclamation fas fa-exclamation-circle"></i>
+          </div>
+          <div class="col-xl-6 offset-xl-1">
+            <p>
+              商品在配送過程中均有妥善包裝，請不用擔心。
+              若配送過程中受損，本店會自行吸收全部費用。
+            </p>
+          </div>
+          <div class="col-xl-4">
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              立即購買
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="parallax-1">
+      <div
+        class="intit-parallax"
+        data-parallax="scroll"
+        data-image-src="./img/parallax-1.jpg"
+      ></div>
+    </section>
+    <section id="story">
+      <div class="container">
+        <div data-aos="flip-left">
+          <div
+            class="boxAll"
+            data-tilt-transition="false"
+            data-tilt
+            data-tilt-perspective="1000"
+            data-tilt-speed="800"
+            data-tilt-glare="true"
+            data-tilt-maxglare=".2"
+            style="background-color: gray"
+          >
+            <div
+              class="box-in"
+              data-tilt-transition="false"
+              data-tilt
+              data-tilt-perspective="2200"
+              data-tilt-speed="500"
+              style="background-color: lemonchiffon"
+            >
+              <div class="row">
+                <div class="col-xl-2 offset-xl-5">
+                  <h1>品牌故事</h1>
+                </div>
+                <div class="col-xl-6 offset-xl-3">
+                  <p class="js-tilt">
+                    創立於己亥年，起初以個人種植興趣為主，隨著時間的推移對植物培養出了不少栽培心得，並運用累積的經驗開發出多種創新系列商品，大幅擴展植物在生活上的功用，另有匠心獨具的特色產品，更能凸顯獨一無二的個人風格。
+                  </p>
+                </div>
+                <p></p>
+                <div class="col-xl-3 offset-xl-2">
+                  <div
+                    class="img-story"
+                    style="background-image: url('./img/flower6.jpg')"
+                  ></div>
+                </div>
+                <div class="col-xl-6 font-group">
+                  <div class="box-title">
+                    <hr class="style" />
+                    <p class="font-name">花之心命名</p>
+                    <hr class="style" />
+                  </div>
+                  <div class="box-font">
+                    <div class="font">
+                      <p>—『蓮，花之君子者也』—</p>
+                    </div>
+                    <div class="font">
+                      <p>—『菊，花之隱逸者也』—</p>
+                    </div>
+                    <div class="font">
+                      <p>—『牡丹，花之富貴者也』—</p>
+                    </div>
+                    <div class="font">
+                      <p class="font-end-1">-宋 周敦頤-</p>
+                    </div>
+                  </div>
+                  <p class="font-end-2">
+                    以真誠的心對待、服務，每一位喜好花的賓客。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container boxAll-under">
+        <div class="row">
+          <div class="col-xl-6">
+            <div
+              class="img-under"
+              style="background-image: url('./img/story.jpg')"
+            ></div>
+          </div>
+          <div class="col-xl-2 offset-xl-1 box-center">
+            <div class="circle-group">
+              <div data-aos="zoom-in">
+                <div
+                  class="circle"
+                  style="background-image: url('./img/circle-1.jpg')"
+                ></div>
+              </div>
+              <div class="font-group">
+                <h1>理念</h1>
+                <p>不屈就於平凡，規劃出多種系列。</p>
+              </div>
+            </div>
+            <div class="circle-group">
+              <div data-aos="zoom-in">
+                <div
+                  class="circle"
+                  style="background-image: url('./img/circle-2.jpg')"
+                ></div>
+              </div>
+              <div class="font-group">
+                <h1>使命</h1>
+                <p>配合現代人生活步調，商品分類一目了然。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-1 box-right">
+            <div class="circle-group">
+              <div data-aos="zoom-in">
+                <div
+                  class="circle"
+                  style="background-image: url('./img/circle-3.jpg')"
+                ></div>
+              </div>
+              <div class="font-group">
+                <h1>願景</h1>
+                <p>持續優化服務品質，替客戶節省更多的時間與金錢。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="parallax-2">
+      <div
+        class="intit-parallax intit-parallax"
+        data-parallax="scroll"
+        data-image-src="./img/parallax-2.jpg"
+      ></div>
+    </section>
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="box-map">
+          <div class="box-map"></div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.336411683795!2d120.7310900154447!3d24.159931878923842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469180d224bdc7d%3A0x1e05d40235646a58!2zNDA25Y-w5Lit5biC5YyX5bGv5Y2A55Kw5aSq5p2x6Lev!5e0!3m2!1szh-TW!2stw!4v1569474998827!5m2!1szh-TW!2stw"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+        <div class="box-right">
+          <h1>聯絡我們</h1>
+          <p>
+            請您填寫相關疑問或建議，當接收到訊息的一段時間內，本店會盡快的商討對策，以期能夠及時解決，為了能正確的聯繫，請提供正確資訊。
+          </p>
+          <form>
+            <div class="input-L">
+              <p>姓名:</p>
+              <input type="text" name="欄位名稱" placeholder="ex : 王小明" />
+              <p>連絡電話:</p>
+              <input type="text" name="欄位名稱" placeholder="ex : 04-12345678"/>
+            </div>
+            <div class="input-R">
+              <p>諮詢項目:</p>
+              <input
+                type="text"
+                name="欄位名稱"
+                placeholder="請填入可以幫助您的資訊"
+              />
+              <p>聯絡手機:</p>
+              <input
+                type="text"
+                name="欄位名稱"
+                placeholder="ex : (09)12345678"
+              />
+            </div>
+          </form>
+          <p>諮詢內容:</p>
+          <div class="box-under-L">
+            <div class="box-L">
+              <textarea style="width:537px;height:100%;"></textarea>
+            </div>
+            <div class="box-R">
+              <button type="button" class="btn btn-primary btn-lg">
+                清除重填
+              </button>
+              <button type="button" class="btn btn-primary btn-lg">
+                確認送出
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="box-footer" style="background-color: lemonchiffon">
+      <div class="box-up">
+        <div class="icon">
+          <i class="font-icon fas fa-mobile-alt"></i>
+          <p>04-2277226</p>
+        </div>
+        <div class="icon">
+          <i class="font-icon fab fa-line"></i>
+          <p>@flowerAtHeart</p>
+        </div>
+        <div class="icon">
+          <i class="font-icon fab fa-facebook-square"></i>
+          <p>花之心植物店</p>
+        </div>
+        <div class="icon">
+          <i class="font-icon fas fa-shopping-cart"></i>
+          <p>購物車</p>
+        </div>
+      </div>
+      <div class="box-img">
+        <img src=".//img/icon-2.png" alt="" />
+      </div>
+      <div class="container box-down">
+        <div class="row">
+          <div class="col-xl-1 offset-xl-3">
+            <p>平日</p>
+          </div>
+          <div class="col-xl-2">
+            <p class="space">9:00~12:00</p>
+          </div>
+          <div class="col-xl-2">
+            <p style="letter-spacing: 3px">13:00~18:00</p>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-xl-1 offset-xl-3">
+            <p>假日</p>
+          </div>
+          <div class="col-xl-2">
+            <p class="space">9:00~12:00</p>
+          </div>
+          <div class="col-xl-2">
+            <p style="letter-spacing: 3px">13:00~21:00</p>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-xl-1 offset-xl-3">
+            <p style="letter-spacing: 2px">Email</p>
+          </div>
+          <div class="col-xl-5">
+            <p>a o e 1 2 8 A 6 5 @ o u t l o o k . c o m</p>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-xl-1 offset-xl-3">
+            <p>地址</p>
+          </div>
+          <div class="col-xl-5">
+            <p>411台中市太平區東村八街68號</p>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-xl-8 offset-xl-2">
+            <p>Copyright©本網頁僅用於教學及練習使用</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript 區域 -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./lightbox2-2.11.1/dist/js/lightbox.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="./personal.js"></script>
+  </body>
+</html>

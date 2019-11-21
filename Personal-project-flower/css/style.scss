@@ -1,0 +1,547 @@
+$product-background-color: gray;
+$commodity-background-color: blue;
+$indoor-color: grey;
+.my {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+#header {
+    background: rgb(153, 219, 127);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* 讓logo main_nav BTN水平排列 */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1140px;
+        margin: 0 auto;
+        .logo {
+            display: flex;
+            a {
+                display: block;
+                align-self: center;
+                img {
+                    width: 60px;
+                }
+            }
+        }
+        /* 水平排列，項目的小黑點拿掉，padding左邊40拿掉，margin上下16px拿掉 */
+        ul.nav_links_group {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* 製作hover的轉變效果 */
+            .nav_links {
+                transition: 0.3s;
+                padding: 2rem 4rem;
+                font-size: 1.5rem;
+                display: block;
+                color: red;
+                text-decoration: none;
+                &:hover {
+                    background-color: wheat;
+                }
+            }
+        }
+    }
+}
+#banner {
+    margin-top: 1.5rem;
+    .swiper-container {
+        width: 100%;
+        height: 709px;
+        .swiper-slide {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+#product {
+    max-width: 1920px;
+    margin: 120px 0;
+    .container.card-4 {
+        display: flex;
+        justify-content: space-between;
+        .box-left,
+        .box-right {
+            display: inline-block;
+            width: calc(50% - 15px);
+            .box.my-100 {
+                margin: 100px 0;
+            }
+            .box {
+                margin: 323.6px 0;
+                background-color: $product-background-color;
+                .font-left {
+                    width: 100%;
+                    padding: 0 10px;
+                    h1 {
+                        padding: 50px 0;
+                        text-align: center;
+                    }
+                    p {
+                        padding-bottom: 25px;
+                    }
+                }
+                .img-left {
+                    position: relative;
+                    background-color: $product-background-color;
+                    display: inline-block;
+                    padding: 0 10px;
+                    width: 100%;
+                    height: 515px;
+                    .img-hide {
+                        position: absolute;
+                        width: calc(100% - 20px);
+                        margin-left: 10px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                    }
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+    .product-animate {
+        width: 1920px;
+        margin-top: 120px;
+        position: relative;
+        overflow: hidden;
+        height: 1055px;
+        display: flex;
+        // 1.左邊的圖片
+        .img-product-L {
+            margin-top: -5px;
+            width: 50%;
+            overflow: hidden;
+            transition: 2s;
+            .img-prodcut-overflow-L {
+                transform: translateX(-979px);
+            }
+        }
+        // 左邊的按鈕按下去後
+        .img-product-L.active {
+            overflow: unset;
+        }
+        // 利用js把右邊的圖片推到外面去
+        .img-product-R.widthTransition {
+            margin-left: 1000px;
+        }
+        // 再把右邊的圖片移動背景位置
+        .img-prodcut-overflow-R.transition {
+            transition: 1.5s;
+            transform: translateX(-800px);
+        }
+        // 2.右邊的圖片
+        .img-product-R {
+            width: 50%;
+            overflow: hidden;
+            transition: 2s;
+            .img-prodcut-overflow-R {
+                transform: translateX(-962px);
+            }
+        }
+        // 右邊的按鈕按下去後，用js新增一個box補左邊空白的地方，然後用order把img-product-R(右邊的圖片區塊)從html排列到第2個
+        .img-product-R.active {
+            overflow: unset;
+            transition: 2s;
+            order: 2;
+        }
+        // 左邊圖片的大小慢慢變成零
+        .img-product-L.widthTransition {
+            position: absolute;
+            transition: 2s;
+            // width: 0;
+            z-index: 2;
+        }
+
+        .boxDownProduct {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            %circle-btn {
+                margin-top: 253px;
+                margin-bottom: 125px;
+                width: 155px;
+                height: 155px;
+                border-radius: 50%;
+                background-color: red;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .circleGroup {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                .circle-btn1 {
+                    @extend %circle-btn;
+                }
+                .circle-btn2 {
+                    @extend %circle-btn;
+                }
+            }
+            .fontGroup {
+                display: flex;
+                justify-content: space-between;
+                .font-L {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+#order {
+    .cart-icon {
+        font-size: 57px;
+    }
+    .circle-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 74.5px;
+        .circle {
+            margin-bottom: 59.7px;
+            width: 253.5px;
+            height: 253.5px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .img-icon {
+                position: relative;
+                z-index: -1;
+                top: 220px;
+                left: 24px;
+            }
+        }
+    }
+    .font-boxs {
+        width: 100%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60.5px;
+        .font-box {
+            width: 253.4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                margin-bottom: 40.2px;
+            }
+            .font-height {
+                line-height: 75px;
+            }
+        }
+    }
+    .font-exclamation {
+        font-size: 50px;
+    }
+}
+#parallax-1 {
+    .intit-parallax {
+        margin: 120px 0;
+        width: 100%;
+        height: 1002px;
+    }
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+#story {
+    .container {
+        .boxAll {
+            width: 100%;
+            padding: 65px;
+            .box-in {
+                transform: translateZ(60px) translateY(0%) translateX(0%);
+                .row {
+                    margin-right: -80px;
+                    margin-left: -80px;
+                    h1 {
+                        margin-top: 25px;
+                        margin-bottom: 38px;
+                    }
+                    p {
+                        transform: translateZ(700px);
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .img-story {
+                margin-bottom: 25px;
+                height: 407px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .font-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                hr.style {
+                    border: 0;
+                    width: 10rem;
+                    height: 1px;
+                    margin: 0;
+                    background-image: linear-gradient(to right, #ccc, red, #ccc);
+                }
+                .font-name {
+                    font-size: 2em;
+                    margin: 0;
+                    line-height: 72px;
+                }
+                .box-font {
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    width: 350px;
+                    .font {
+                        flex-grow: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        p {
+                            width: 350px;
+                            text-align-last: justify;
+                            margin: 0;
+                        }
+                        .font-end-1 {
+                            width: 160px;
+                            text-align-last: justify;
+                        }
+                    }
+                }
+
+                .font-end-2 {
+                    width: 100%;
+                    margin-bottom: 25px;
+                    margin-top: 20px;
+                    text-align-last: justify;
+                }
+            }
+        }
+        // .box-All-plot{
+        //     position: relative;
+        //     width: 1920px;
+        //     .left-box-plot{
+        //         width: 50%;
+        //         height: 1080px;
+        //         overflow: hidden;
+        //         img{
+        //             width: 100%;
+        //             height: 100%;
+        //         }
+        //     }
+        //     .right-box-plot{
+        //         position: absolute;
+        //         top: 0;
+        //         left: 0;
+        //         z-index: 2;
+        //         width: 50%;
+        //         height: 1080px;
+        //         overflow: hidden;
+        //         img{
+        //             width: 100%;
+        //             height: 100%;
+        //         }
+        //     }
+        // }
+    }
+    .container.boxAll-under {
+        margin: 120px auto;
+        padding: 0 15px;
+        %story-back-img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .img-under {
+            width: 100%;
+            height: 747px;
+            @extend %story-back-img;
+        }
+        .box-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .circle-group {
+                .circle {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    @extend %story-back-img;
+                }
+                .font-group {
+                    h1 {
+                        line-height: 4rem;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+        .box-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .circle-group {
+                .circle {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    @extend %story-back-img;
+                }
+                .font-group {
+                    h1 {
+                        line-height: 4rem;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+#parallax-2 {
+    .intit-parallax {
+        width: 100%;
+        height: 1002px;
+    }
+    // background-position: center;
+    // background-size: cover;
+    // background-attachment: fixed;
+}
+#contact {
+    margin: 120px 0;
+    .container-fluid {
+        display: flex;
+        padding-left: 0;
+        height: 723px;
+        .box-map {
+            width: 1135px;
+            margin-right: 30px;
+        }
+        .box-right {
+            // flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            h1 {
+                margin-bottom: 38px;
+            }
+            form {
+                display: flex;
+                .input-L {
+                    width: 350px;
+                    margin-right: 40px;
+                    p {
+                        line-height: 50px;
+                    }
+                    input {
+                        width: 350px;
+                        height: 50px;
+                    }
+                }
+                .input-R {
+                    width: 350px;
+                    p {
+                        line-height: 50px;
+                    }
+                    input {
+                        width: 350px;
+                        height: 50px;
+                    }
+                }
+            }
+            .box-under-L {
+                flex-grow: 1;
+                display: flex;
+                .box-L {
+                    margin-right: 40px;
+                }
+                .box-R {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    flex-grow: 1;
+                    .btn-lg {
+                        width: 100%;
+                        height: 45%;
+                    }
+                }
+            }
+        }
+    }
+}
+footer.box-footer {
+    margin-top: 120px;
+    padding: 50px 0;
+    p {
+        line-height: 60px;
+        text-align-last: justify;
+    }
+    .box-up {
+        display: flex;
+        justify-content: space-around;
+        .icon {
+            display: flex;
+            width: 250px;
+            .font-icon {
+                margin-right: 30px;
+                font-size: 63px;
+            }
+        }
+    }
+    .box-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -90px;
+    }
+    .box-down {
+        .space {
+            letter-spacing: 4.8px;
+        }
+    }
+}
