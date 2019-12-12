@@ -1,5 +1,5 @@
 <h1>程式作品</h1>
-<br><p>個人專題-花卉形象網站</>: 
+<br><p>個人專題-花卉形象網站: 
 <br>https://aehuw3he.github.io/Personal-project-flower/personal.html
 <br><br>團體專題-八時神仙草: 
 <br>https://mesona2019.github.io/Pa_Shih_Mesona.html
